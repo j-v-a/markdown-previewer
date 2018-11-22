@@ -1,0 +1,42 @@
+.quote-box {
+  background: black;
+  padding: 2em;
+  opacity: 0.8;
+  border-radius: 2em;
+  max-width: 80%;
+  text-align: center;
+  border: 2px solid darkgoldenrod;
+
+  h1 {
+    margin-top: 0;
+    color: white;
+    font-weight: 900;
+    font-size: 3em;
+
+    &:hover {
+      color: darkgoldenrod;
+      cursor: pointer;
+    }
+  }
+
+  #text {
+    color: white;
+    font-size: 2em
+  }
+
+  #author {
+    color: darkgoldenrod;
+    font-size: 1.5em
+  }
+
+  #tweet-quote {
+    margin-top: 0.5em;
+    font-size: 3em;
+    color: white;
+
+    &:hover {
+      color: darkgoldenrod;
+      cursor: pointer;
+    }
+  }
+}

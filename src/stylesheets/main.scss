@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto"rel="stylesheet"');
+
+@import 'markdownPreviewer';
+
+body {
+  margin: 0;
+
+  main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1527234639945-70d78416bd7d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=721783d6df00ea979608158fd776675e&auto=format&fit=crop&w=2038&q=80");
+    background-size: cover;
+    background-position: center;
+  }
+}

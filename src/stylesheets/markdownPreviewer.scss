@@ -1,0 +1,67 @@
+@import 'colors';
+
+.default-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2em 1fr;
+  box-shadow: $default-shadow;
+}
+
+.default-textbox {
+  box-sizing: border-box;
+  opacity: 0.97;
+  padding: 1em;
+  width: 100%;
+}
+
+.default-topbar {
+  padding: 0.5em;
+  background: $dark-accent;
+  color: $white;
+}
+
+#app {
+  width: 90%;
+
+  #markdown-previewer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(200px, 80vh);
+    grid-gap: 1em;
+
+    #editor-wrapper {
+      @extend .default-wrapper;
+      grid-column: 1 / 2;
+
+      #editor-topbar {
+        @extend .default-topbar;
+      }
+
+      #editor {
+        @extend .default-textbox;
+        resize: none;
+        outline: none;
+      }
+    }
+
+    #previewer {
+      @extend .default-wrapper;
+      grid-column: 2 / 3;
+
+      #preview-topbar {
+        @extend .default-topbar;
+      }
+
+      #preview {
+        @extend .default-textbox;
+        background: $light-accent;
+        overflow: scroll;
+        overflow-x: hidden;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
