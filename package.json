@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://j-v-a.github.io/markdown-previewer",
+  "homepage": "https://j-v-a.github.io/markdown-previewer/",
   "scripts": {
     "dev": "webpack-dev-server --config ./webpack.dev.js --mode development",
     "test": "echo \"No test specified\" && exit 0",
-    "build": "webpack --config ./webpack.config.js --mode production",
+    "build": "webpack --mode production",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
